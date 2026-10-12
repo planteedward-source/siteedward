@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://edward-plante.vercel.app/sitemap.xml

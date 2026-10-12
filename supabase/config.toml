@@ -1,0 +1,4 @@
+[functions.upload-media]
+# The handler validates the user token with Auth and checks is_admin itself.
+# Supports current asymmetric signing keys as well as legacy JWTs.
+verify_jwt = false
