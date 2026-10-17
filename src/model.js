@@ -75,9 +75,9 @@ export const initialData = {
   totals: teams.map((t) => ({
     season_id: "2026-2027",
     team: t.id,
-    matches: 0,
+    matches: t.id === "trident" ? 1 : 0,
     goals: 0,
-    assists: 0,
+    assists: t.id === "trident" ? 1 : 0,
     revision: 0,
   })),
   media: [],

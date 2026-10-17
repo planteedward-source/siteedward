@@ -8,10 +8,10 @@ import {
   validateFile,
 } from "../src/model.js";
 
-test("initial public totals are zero without fabricated matches", () => {
+test("public totals reflect Edward’s confirmed season statistics", () => {
   for (const team of ["trident", "jm"]) {
     const totals = totalFor(initialData, activeSeason(initialData).id, team);
-    assert.deepEqual([totals.matches, totals.goals, totals.assists], [0, 0, 0]);
+    assert.deepEqual([totals.matches, totals.goals, totals.assists], team === "trident" ? [1, 0, 1] : [0, 0, 0]);
   }
 });
 test("home and statistics resolve the same published team and active season", () => {
