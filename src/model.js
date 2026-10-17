@@ -61,6 +61,15 @@ export const localMedia = [
   ...media,
   thumbnail: media.path.replace(".png", "-thumb.webp"),
 }));
+localMedia.push({
+  id: "local-6",
+  kind: "image",
+  season_id: "2026-2027",
+  path: "/images/soccer-saison-2026-2027.jpg",
+  thumbnail: "/images/soccer-saison-2026-2027-thumb.webp",
+  title: "Soccer · Saison 2026-2027",
+  alt: "Edward en maillot bleu clair numéro 77 dispute le ballon sur le terrain, saison 2026-2027.",
+});
 localMedia.push(...[1, 2, 3].map((number) => ({
   id: `local-video-${number}`,
   kind: "video",
