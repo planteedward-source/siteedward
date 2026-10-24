@@ -18,9 +18,9 @@ export const localMedia = [
   {
     id: "local-hero",
     kind: "image",
-    path: "/images/accueil.png",
-    title: "Sur le terrain avec JM",
-    alt: "Edward de dos avec le maillot bleu JM numéro 40 sur un terrain extérieur.",
+    path: "/images/soccer-bleu.png",
+    title: "Sur le terrain",
+    alt: "Edward en maillot bleu clair numéro 77 près du ballon.",
   },
   {
     id: "local-1",
@@ -46,9 +46,9 @@ export const localMedia = [
   {
     id: "local-4",
     kind: "image",
-    path: "/images/soccer-bleu.png",
-    title: "Sur le terrain",
-    alt: "Edward en maillot bleu clair numéro 77 près du ballon.",
+    path: "/images/accueil.png",
+    title: "Sur le terrain avec JM",
+    alt: "Edward de dos avec le maillot bleu JM numéro 40 sur un terrain extérieur.",
   },
   {
     id: "local-5",
@@ -75,9 +75,9 @@ export const initialData = {
   totals: teams.map((t) => ({
     season_id: "2026-2027",
     team: t.id,
-    matches: t.id === "trident" ? 1 : 0,
+    matches: t.id === "trident" ? 2 : 0,
     goals: 0,
-    assists: t.id === "trident" ? 1 : 0,
+    assists: t.id === "trident" ? 2 : 0,
     revision: 0,
   })),
   media: [],

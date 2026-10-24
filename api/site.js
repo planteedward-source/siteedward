@@ -59,7 +59,7 @@ export default async function handler(req, res) {
       ? `${siteUrl}${hero.path}`
       : hero && publicUrl
         ? `${publicUrl}/storage/v1/object/public/player-media/${hero.path}`
-        : `${siteUrl}/images/accueil.png`;
+        : `${siteUrl}${localMedia[0].path}`;
     const graph = structuredData(path, image);
     let html = template.replace(
       /<title>[\s\S]*?<\/title>/,

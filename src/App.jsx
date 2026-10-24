@@ -419,12 +419,12 @@ export default function App({
                 </div>
                 <figure className="journey-photo">
                   <img
-                    src="/images/soccer-bleu.png"
+                    src={localMedia[4].path}
                     alt={localMedia[4].alt}
                     width="550"
                     height="740"
                   />
-                  <figcaption>Soccer · Numéro 77</figcaption>
+                  <figcaption>{localMedia[4].title}</figcaption>
                 </figure>
               </div>
               <div className="team-rows">
