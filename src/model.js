@@ -11,7 +11,7 @@ export const teams = [
     name: "JM Bleu & Or",
     initials: "JM",
     sport: "Futsal scolaire",
-    detail: "Équipe scolaire",
+    detail: "Équipe scolaire · Numéro 18",
   },
 ];
 export const localMedia = [
@@ -27,14 +27,14 @@ export const localMedia = [
     kind: "image",
     path: "/images/action-jm.png",
     title: "En action",
-    alt: "Edward, numéro 40 en bleu, frappe le ballon sur un terrain extérieur.",
+    alt: "Edward en maillot bleu de JM frappe le ballon sur un terrain extérieur.",
   },
   {
     id: "local-2",
     kind: "image",
     path: "/images/jm-terrain.png",
     title: "Avec les joueurs de JM",
-    alt: "Edward avec le maillot numéro 40 aux côtés de joueurs de JM.",
+    alt: "Edward en maillot bleu aux côtés de joueurs de JM.",
   },
   {
     id: "local-3",
@@ -48,7 +48,7 @@ export const localMedia = [
     kind: "image",
     path: "/images/accueil.png",
     title: "Sur le terrain avec JM",
-    alt: "Edward de dos avec le maillot bleu JM numéro 40 sur un terrain extérieur.",
+    alt: "Edward de dos avec le maillot bleu JM sur un terrain extérieur.",
   },
   {
     id: "local-5",
