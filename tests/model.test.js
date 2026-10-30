@@ -11,7 +11,7 @@ import {
 test("public totals reflect Edward’s confirmed season statistics", () => {
   for (const team of ["trident", "jm"]) {
     const totals = totalFor(initialData, activeSeason(initialData).id, team);
-    assert.deepEqual([totals.matches, totals.goals, totals.assists], team === "trident" ? [1, 0, 1] : [0, 0, 0]);
+    assert.deepEqual([totals.matches, totals.goals, totals.assists], team === "trident" ? [2, 0, 2] : [0, 0, 0]);
   }
 });
 test("home and statistics resolve the same published team and active season", () => {

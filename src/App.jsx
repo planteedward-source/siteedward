@@ -264,7 +264,7 @@ export default function App({
                       <small>Futsal scolaire</small>
                     </div>
                     <span className="jersey">
-                      <small>FUTSAL</small>#18
+                      <small>FUTSAL</small>#7
                     </span>
                   </div>
                 </div>

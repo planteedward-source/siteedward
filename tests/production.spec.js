@@ -56,7 +56,7 @@ test("HTML hydrates and maintains separate soccer and futsal identities", async 
   page.on("pageerror", (e) => errors.push(e.message));
   await page.goto("/");
   await expect(page.locator(".club-line .jersey").first()).toContainText("#77");
-  await expect(page.locator(".futsal-club-line .jersey")).toContainText("#40");
+  await expect(page.locator(".futsal-club-line .jersey")).toContainText("#7");
   await page
     .getByRole("navigation")
     .getByRole("link", { name: "Mon parcours", exact: true })

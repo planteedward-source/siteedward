@@ -11,7 +11,7 @@ export const teams = [
     name: "JM Bleu & Or",
     initials: "JM",
     sport: "Futsal scolaire",
-    detail: "Équipe scolaire · Numéro 18",
+    detail: "Équipe scolaire · Numéro 7",
   },
 ];
 export const localMedia = [
