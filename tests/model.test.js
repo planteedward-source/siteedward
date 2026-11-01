@@ -11,7 +11,7 @@ import {
 test("public totals reflect Edward’s confirmed season statistics", () => {
   for (const team of ["trident", "jm"]) {
     const totals = totalFor(initialData, activeSeason(initialData).id, team);
-    assert.deepEqual([totals.matches, totals.goals, totals.assists], team === "trident" ? [2, 0, 2] : [0, 0, 0]);
+    assert.deepEqual([totals.matches, totals.goals, totals.assists], team === "trident" ? [3, 1, 3] : [4, 4, 1]);
   }
 });
 test("home and statistics resolve the same published team and active season", () => {
@@ -28,7 +28,7 @@ test("home and statistics resolve the same published team and active season", ()
   assert.equal(totalFor(data, activeSeason(data).id, "trident").goals, 5);
   assert.equal(totalFor(data, "2027-2028", "trident").assists, 3);
   assert.equal(totalFor(data, "2027-2028", "jm").goals, 0);
-  assert.equal(totalFor(data, "2026-2027", "trident").goals, 0);
+  assert.equal(totalFor(data, "2026-2027", "trident").goals, 1);
 });
 test("counters refuse negative, fractional, missing and excessive values", () => {
   for (const value of [-1, 0.5, "", NaN, Infinity, 10001])
