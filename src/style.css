@@ -769,6 +769,14 @@ h3 {
   aspect-ratio: 550/740;
   object-fit: contain;
 }
+.media-video-preview {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 550/740;
+  object-fit: contain;
+  background: #080d09;
+}
 .media-open:hover .image-expand {
   background: var(--lime);
   color: #14200d;

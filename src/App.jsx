@@ -799,7 +799,7 @@ function MediaPage({ data, admin, refresh, media, hero }) {
           <div className="reference-grid">
             {references.map((m) => (
               <figure key={m.id}>
-                <video src={mediaUrl(m)} poster={m.poster} controls playsInline preload="none" aria-label={m.alt} />
+                <video src={mediaUrl(m)} poster={m.poster} controls muted playsInline preload="none" aria-label={m.alt} />
                 <figcaption>{m.title}</figcaption>
               </figure>
             ))}
@@ -827,16 +827,23 @@ function MediaPage({ data, admin, refresh, media, hero }) {
                     loading="lazy"
                   />
                 ) : (
-                  <div className="video-preview">
-                    <span aria-hidden="true">▷</span>
-                    <span>Vidéo · {m.title}</span>
-                  </div>
+                  <video
+                    className="media-video-preview"
+                    src={mediaUrl(m)}
+                    poster={m.poster}
+                    muted
+                    autoPlay
+                    loop
+                    playsInline
+                    preload="metadata"
+                    aria-hidden="true"
+                  />
                 )}
                 <span className="image-expand" aria-hidden="true">
                   ↗
                 </span>
               </button>
-              <figcaption>{m.title}</figcaption>
+              {m.kind === "image" && <figcaption>{m.title}</figcaption>}
             </figure>
           ))}
         </div>
@@ -873,6 +880,7 @@ function MediaPage({ data, admin, refresh, media, hero }) {
               <video
                 src={mediaUrl(view)}
                 controls
+                muted
                 playsInline
                 preload="metadata"
                 tabIndex="0"
