@@ -70,14 +70,30 @@ localMedia.push(...[1, 2, 3].map((number) => ({
   title: `U13 AAA · Vidéo ${number}`,
   alt: `Extrait ${number} de la saison dernière d’Edward Plante en U13 AAA.`,
 })));
+localMedia.push(...[1, 2, 3].map((number) => ({
+  id: `local-video-${number + 3}`,
+  kind: "video",
+  path: `/videos/cs-trident-2026-2027-${number}.mp4`,
+  poster: `/videos/cs-trident-2026-2027-${number}.jpg`,
+  title: `CS Trident AA · Match (extrait) ${number}`,
+  alt: `Extrait vidéo d’un match d’Edward avec le CS Trident AA en 2026-2027.`,
+})));
+localMedia.push(...[4, 5, 6].map((number) => ({
+  id: `local-video-${number + 3}`,
+  kind: "video",
+  path: `/videos/cs-trident-2026-2027-${number}.mp4`,
+  poster: `/videos/cs-trident-2026-2027-${number}.jpg`,
+  title: `CS Trident AA · Match (extrait) ${number}`,
+  alt: `Extrait vidéo d’un match d’Edward avec le CS Trident AA en 2026-2027.`,
+})));
 export const initialData = {
   seasons: [{ id: "2026-2027", label: "2026-2027", active: true }],
   totals: teams.map((t) => ({
     season_id: "2026-2027",
     team: t.id,
-    matches: t.id === "trident" ? 3 : 4,
-    goals: t.id === "trident" ? 1 : 4,
-    assists: t.id === "trident" ? 3 : 1,
+    matches: t.id === "trident" ? 4 : 4,
+    goals: t.id === "trident" ? 3 : 4,
+    assists: t.id === "trident" ? 4 : 1,
     revision: 0,
   })),
   media: [],

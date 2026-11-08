@@ -81,5 +81,4 @@ La compilation et les vérifications locales ne remplacent pas les essais Supaba
 
 La date de naissance, les mensurations, les récompenses et les résultats sportifs n'ont pas été inventés. L'âge est une information explicite à mettre à jour manuellement dans le code lorsqu'il change.
 
-Les trois vidéos de référence sont des extraits de la saison dernière en U13 AAA, selon Edward. Les copies MP4 optimisées et leurs affiches se trouvent dans `public/videos/`. Les fichiers MOV originaux restent intacts. La migration 002 permet à l’administrateur de retirer ces vidéos locales.
-Les trois vidéos de référence ne contiennent aucune piste audio.
+Les trois vidéos de référence U13 AAA de la saison dernière sont conservées. Six extraits de match du CS Trident AA pour 2026-2027 sont aussi dans `public/videos/`, en MP4 optimisé avec affiches. Les fichiers MOV sources fournis restent intacts dans Téléchargements. La migration `202611070001_add_trident_match_stats_and_videos.sql` ajoute 1 match, 2 buts et 1 passe décisive au total de la saison active, et permet à l’administrateur de masquer les nouvelles vidéos locales.

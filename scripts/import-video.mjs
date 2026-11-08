@@ -3,7 +3,7 @@ import { spawnSync } from 'node:child_process';
 import { mkdir } from 'node:fs/promises';
 import { resolve } from 'node:path';
 const [source,name] = process.argv.slice(2);
-if (!source || !/^reference-u13-aaa-[1-3]$/.test(name || '')) throw new Error('Usage: node scripts/import-video.mjs source.mov reference-u13-aaa-1');
+if (!source || !/^(reference-u13-aaa-[1-3]|cs-trident-2026-2027-[1-6])$/.test(name || '')) throw new Error('Usage: node scripts/import-video.mjs source.mov reference-u13-aaa-1|cs-trident-2026-2027-1');
 const destination=resolve('public/videos');await mkdir(destination,{recursive:true});
 const video=resolve(destination,`${name}.mp4`);const poster=resolve(destination,`${name}.jpg`);
 for (const args of [
