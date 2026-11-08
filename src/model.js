@@ -70,7 +70,7 @@ localMedia.push(...[1, 2, 3].map((number) => ({
   title: `U13 AAA · Vidéo ${number}`,
   alt: `Extrait ${number} de la saison dernière d’Edward Plante en U13 AAA.`,
 })));
-localMedia.push(...[1, 2].map((number) => ({
+localMedia.push(...[1, 2, 3].map((number) => ({
   id: `local-video-${number + 3}`,
   kind: "video",
   path: `/videos/cs-trident-2026-2027-${number}.mp4`,
